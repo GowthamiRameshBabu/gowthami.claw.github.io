@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<title>CLAW</title>
+<link href="https://apply.holbertonschool.com/level2/school.css" rel="stylesheet">
+<link href="styles.css" rel="stylesheet"> 
+<script src="behavior.js"></script>
+</head>
+
+<body class="works_on_smartphone" onload="initTimeline()">
+  <header>
+    <div class="hamburger" onclick="togglehamburgermenu()">&#9776;</div>
+        <div class="right menu-bar" id ="menu">
+      <ul>
+        <li>
+          <a href="index.html">
+            <img class="header_logo" src="images/logo.png" alt="Logo">
+          </a>
+        </li>
+        <li>
+          <a href="index.html" class="nav-button">Home</a>
+        </li>
+        <li>
+          <a href="cybersecurity_basics.html" class="nav-button">Cybersec Basics</a>
+        </li>
+        <li>
+          <a href="cyber_laws.html" class="nav-button nav-button-selected">Cyber Laws</a>
+        </li>
+        <li>
+          <a href="cyber_case_studies.html" class="nav-button">Case Studies</a>
+        </li>
+        <li>
+          <a href="activities.html" class="nav-button">Activities & Tools </a>
+        </li>
+        <li>
+          <a href="downloads.html" class="nav-button"> Resources</a>
+        </li>
+        <li>
+          <a href="tweets.html" class="nav-button">Recent Tweets</a>
+        </li>
+        <li>
+          <a href="javascript:shareOnFacebook();">
+            <img width="30" src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook" title="Share on your Facebook">
+          </a>
+        </li>
+        <li>
+          <a href="javascript:shareOnLinkedIn();">
+            <img width="30" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin" title="Share on your LinkedIn">
+          </a>
+        </li>
+        <li>
+          <a href="javascript:shareOnTwitter();">
+            <img width="30" src="https://img.icons8.com/ios-glyphs/30/twitterx--v2.png" alt="twitterx" title="Share on your Twitter">
+          </a>
+        </li>
+        <li>
+          <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        </li>
+      </ul>
+    </div>
+  </header>
+    <main>
+        <article>
+          
+          <div class="topic">
+            <h3>Global Cyber Laws</h3>
+            <ul>
+                <li><strong>GDPR (Europe)</strong> - The General Data Protection Regulation (GDPR) is a privacy law that strengthens data protection rights for individuals in the European Union. It enforces strict rules on how organizations handle and process personal data, with hefty fines for non-compliance.</li>
+                <li><strong>CCPA (USA)</strong> - The California Consumer Privacy Act (CCPA) provides California residents with greater control over their personal data. It mandates transparency in data collection, allowing consumers to request data deletion and opt out of data sales.</li>
+                <li><strong>HIPAA (USA)</strong> - The Health Insurance Portability and Accountability Act (HIPAA) is a U.S. law that safeguards medical and health-related information. It ensures that healthcare providers and related entities implement security measures to protect patient data.</li>
+                <li><strong>NIST Framework (USA)</strong> - The National Institute of Standards and Technology (NIST) Cybersecurity Framework offers guidelines to help organizations identify, protect, detect, respond to, and recover from cyber threats. It is widely adopted by businesses and government agencies.</li>
+            </ul>
+          </div>
+        
+        <div class="topic">
+            <h3>Australian Cyber Laws</h3>
+            <ul>
+                <li><strong>Privacy Act 1988</strong> - This law regulates how personal information is collected, stored, and used in Australia. It establishes principles for organizations to follow in order to ensure privacy protection and data security.</li>
+                <li><strong>Cybercrime Act 2001</strong> - The Cybercrime Act criminalizes hacking, unauthorized data access, and other cyber-related offenses in Australia. It aligns with international efforts to combat cyber threats and prosecute offenders.</li>
+                <li><strong>ACSC Guidelines</strong> - The Australian Cyber Security Centre (ACSC) provides best practice recommendations for individuals and organizations to enhance cybersecurity. These guidelines cover threat mitigation, data protection, and response strategies.</li>
+            </ul>
+            </div>
+          
+
+          <div class="topic">
+            <h3>Evolution of Cybersecurity Laws</h3><br>
+            <span style="color:rgb(161, 11, 11)"> Click each timeline below to know more</span>
+            <div id="interactive-timeline"></div>
+          <br>
+          <br>
+          </div>
+
+          <div class = "nav-div-flex">
+            <a href="cybersecurity_basics.html" class="cta-button">Back: CyberSec Basics</a>
+            <a href="cyber_case_studies.html" class="cta-button">Next: Case Studies</a>
+          </div>
+        </article>
+        <aside>
+            <h3>Government &amp; Legal Resources</h3>
+            <br><br>
+            <div class="resources">
+            <ul>
+              <li> <a href="https://gdpr.eu/" target="_blank"> General Data Protection Regulation (GDPR) Official Site</a><br><br><br></li>
+              <li> <a href="https://oag.ca.gov/privacy/ccpa" target="_blank">The California Consumer Privacy Act (CCPA) Official Site</a><br><br><br></li>
+              <li> <a href="https://www.hhs.gov/hipaa/" target="_blank">The Health Insurance Portability and Accountability Act (HIPAA) Official Site</a><br><br><br></li>
+              <li> <a href="https://www.oaic.gov.au/privacy/the-privacy-act" target="_blank">Australian Privacy Act</a><br><br><br></li>
+              <li> <a href="https://www.cyber.gov.au/" target="_blank">Australian Cyber Security Centre (ACSC)</a></li>
+            </ul>
+          </div>
+        </aside>
+    </main>
+    <footer>
+      <p>&copy; 2025. Made by Gowthami Ramesh Babu for <a href="https://apply.holbertonschool.com" target="_blank">Holberton School</a></p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>CLAW</title>
+    <link href="https://apply.holbertonschool.com/level2/school.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="behavior.js"></script>
+</head>
+
+<body class="works_on_smartphone" onload="initQuiz()">
+
+    <header>
+        <div class="hamburger" onclick="togglehamburgermenu()">&#9776;</div>
+        <div class="right menu-bar" id ="menu">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img class="header_logo" src="images/logo.png" alt="Logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html" class="nav-button">Home</a>
+                </li>
+                <li>
+                    <a href="cybersecurity_basics.html" class="nav-button nav-button-selected">Cybersec Basics</a>
+                </li>
+                <li>
+                    <a href="cyber_laws.html" class="nav-button">Cyber Laws</a>
+                </li>
+                <li>
+                    <a href="cyber_case_studies.html" class="nav-button">Case Studies</a>
+                </li>
+                <li>
+                    <a href="activities.html" class="nav-button">Activities & Tools </a>
+                </li>
+                <li>
+                    <a href="downloads.html" class="nav-button"> Resources</a>
+                </li>
+                <li>
+                    <a href="tweets.html" class="nav-button">Recent Tweets</a>
+                </li>
+                <li>
+                    <a href="javascript:shareOnFacebook();">
+                        <img width="30" src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook" title="Share on your Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:shareOnLinkedIn();">
+                        <img width="30" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin" title="Share on your LinkedIn">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:shareOnTwitter();">
+                        <img width="30" src="https://img.icons8.com/ios-glyphs/30/twitterx--v2.png" alt="twitterx" title="Share on your Twitter">
+                    </a>
+                </li>
+                <li>
+                    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <article>
+          <br>
+          <h3>Cybersecurity Basics</h3>
+            <section id="cyber-basics">
+                
+                <p>Cybersecurity involves protecting systems, and data from cyber threats. Common cyber threats include phishing and malware attacks, and social engineering. Understanding them is crucial for being safe online.</p>
+                <div class="topic">
+                    <h3>Phishing Attacks</h3>
+                    <p>Phishing is a cyber attack where attackers trick users into revealing personal information like passwords and credit card details. It often occurs via fake emails, fraudulent websites, or deceptive messages.</p>
+                    <h4>Types of Phishing:</h4>
+                    <ul>
+                        <li><strong>Email Phishing:</strong> Fake emails pretending to be from legitimate sources.</li>
+                        <li><strong>Spear Phishing:</strong> Targeted phishing aimed at specific individuals.</li>
+                        <li><strong>Vishing:</strong> Phishing conducted through voice calls.</li>
+                        <li><strong>Smishing:</strong> Phishing attacks using SMS messages.</li>
+                    </ul>
+                </div>
+                <div class="topic">
+                    <h3>Malware</h3>
+                    <p>Malware is malicious software designed to harm or exploit devices and networks. It can be spread through infected downloads, email attachments, or compromised websites.</p>
+                    <h4>Types of Malware:</h4>
+                    <ul>
+                        <li><strong>Spyware:</strong> Secretly collects user activity information.</li>
+                        <li><strong>Ransomware:</strong> Encrypts files and demands ransom for decryption.</li>
+                        <li><strong>Trojan Horse:</strong> Disguises itself as legitimate software to install malware.</li>
+                        <li><strong>Worms:</strong> Self-replicating malware that spreads across networks.</li>
+                    </ul>
+                </div>
+                <div class="topic">
+                    <h3>Social Engineering</h3>
+                    <p>Social engineering is the manipulation of people into divulging confidential information. Instead of exploiting software vulnerabilities, attackers exploit human psychology.</p>
+                    <h4>Common Social Engineering Attacks:</h4>
+                    <ul>
+                        <li><strong>Impersonation:</strong> Attackers pretend to be trusted figures (e.g., IT support) to gain access to sensitive information.</li>
+                        <li><strong>Baiting:</strong> Attackers offer something tempting (e.g., a free download) that contains malware.</li>
+                        <li><strong>Pretexting:</strong> Scammers create a fabricated scenario to steal information.</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <br>
+            <div class="nav-div-flex">
+                <a href="index.html" class="cta-button">Back: Home</a>
+                <a href="cyber_laws.html" class="cta-button">Next: Learn About Cyber Laws</a>
+            </div>
+        </article>
+
+
+        <aside>
+            <section id="quiz-section" class="quiz-section">
+                <h3>Knowledge Test</h3>
+                <p>Select the correct answer to proceed next</p>
+                <div id="quiz"></div>
+                <p id="quiz-feedback"></p>
+            </section>
+            <!-- Best Practices Section (Appears After Quiz Completion) -->
+            <section class="best-practices">
+                <h4>Best Security Practices</h4>
+                <ul>
+                    <li>Use strong and unique passwords.</li>
+                    <li> Enable two-factor authentication (2FA).</li>
+                    <li> Avoid clicking on suspicious links.</li>
+                    <li> Keep your software and antivirus updated.</li>
+                    <li> Verify email senders before providing sensitive information.</li>
+                </ul>
+            </section>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2025. Made by Gowthami Ramesh Babu for <a href="https://apply.holbertonschool.com" target="_blank">Holberton School</a></p>
+</footer></body>
+
+</html>

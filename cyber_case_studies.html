@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>CLAW</title>
+    <link href="https://apply.holbertonschool.com/level2/school.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="behavior.js"></script>
+  </head>
+  <body class="works_on_smartphone" onload="initPage()">
+    <header>
+      <div class="hamburger" onclick="togglehamburgermenu()">&#9776;</div>
+        <div class="right menu-bar" id ="menu">
+        <ul>
+          <li>
+            <a href="index.html">
+              <img class="header_logo" src="images/logo.png" alt="Logo">
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="nav-button">Home</a>
+          </li>
+          <li>
+            <a href="cybersecurity_basics.html" class="nav-button">Cybersec Basics</a>
+          </li>
+          <li>
+            <a href="cyber_laws.html" class="nav-button">Cyber Laws</a>
+          </li>
+          <li>
+            <a href="cyber_case_studies.html" class="nav-button nav-button-selected">Case Studies</a>
+          </li>
+          <li>
+            <a href="activities.html" class="nav-button">Activities & Tools </a>
+          </li>
+          <li>
+            <a href="downloads.html" class="nav-button"> Resources</a>
+          </li>
+          <li>
+            <a href="tweets.html" class="nav-button">Recent Tweets</a>
+          </li>
+          <li>
+            <a href="javascript:shareOnFacebook();">
+              <img width="30" src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook" title="Share on your Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:shareOnLinkedIn();">
+              <img width="30" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin" title="Share on your LinkedIn">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:shareOnTwitter();">
+              <img width="30" src="https://img.icons8.com/ios-glyphs/30/twitterx--v2.png" alt="twitterx" title="Share on your Twitter">
+            </a>
+          </li>
+          <li>
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <article>
+        <!-- Changeable content -->
+        <h3>Major Cyber Attacks</h3>
+        <section id="case-studies">
+          <div class="topic">
+            <h4>Colonial Pipeline Ransomware Attack (2021)</h4>
+            <div id="colonial" class="case-details">
+              <p>In 2021, Colonial Pipeline, a major U.S. fuel supplier, was hit by a ransomware attack, disrupting fuel supply on the East Coast.</p>
+              <p>
+                <strong>Impact:</strong> Fuel shortages, price spikes, and a $4.4 million ransom payment.
+              </p>
+              <p>
+                <strong>Legal Consequences:</strong> U.S. authorities seized part of the ransom and implemented stricter cybersecurity policies.
+              </p>
+            </div>
+          </div>
+          <div class="topic">
+            <h4>Optus Data Breach (2022)</h4>
+            <div id="optus" class="case-details">
+              <p>Optus, one of Australia's largest telecom providers, suffered a major data breach, exposing personal information of 10 million customers.</p>
+              <p>
+                <strong>Impact:</strong> Financial fraud risks, identity theft, and a major hit to Optus' reputation.
+              </p>
+              <p>
+                <strong>Legal Consequences:</strong> Led to government discussions on stricter data privacy laws.
+              </p>
+            </div>
+          </div>
+          <div class="topic">
+            <h4>Medibank Data Breach (2022)</h4>
+            <div id="medibank" class="case-details">
+              <p>Medibank, a major Australian health insurer, suffered a cyberattack exposing personal and health-related data of nearly 9.7 million customers.</p>
+              <p>
+                <strong>Impact:</strong> Sensitive medical records leaked, identity theft risks, and financial fraud.
+              </p>
+              <p>
+                <strong>Legal Consequences:</strong> Australian government strengthened cybersecurity regulations and penalties for breaches.
+              </p>
+            </div>
+          </div>
+          <div class="topic">
+            <h4>Latitude Financial Data Breach (2023)</h4>
+            <div id="latitude" class="case-details">
+              <p>Latitude Financial, a major financial services provider in Australia, was targeted in a cyberattack exposing driver’s license, passport, and financial details of millions of customers.</p>
+              <p>
+                <strong>Impact:</strong> Identity theft concerns, financial fraud risks, and reputational damage.
+              </p>
+              <p>
+                <strong>Legal Consequences:</strong> Regulatory scrutiny increased on financial institutions’ data security practices.
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="nav-div-flex">
+          <a href="cyber_laws.html" class="cta-button">Back: Cyber Laws</a>
+          <a href="activities.html" class="cta-button">Next: Activities</a>
+        </div>
+      </article>
+      <aside>
+        <h3>What Would You Do?</h3>
+        <p class="center-text">Make a decision in a cyberattack scenario:</p>
+        <div class="scenario">
+          <p>
+            <strong>Scenario 1:</strong> You receive an email from your bank saying your account is locked. It asks you to log in using a link.
+          </p> &nbsp;&nbsp;&nbsp;&nbsp; <button class="quiz-button" data-option="ignore">Ignore Email</button>
+          <button class="quiz-button" data-option="click">Click the Link</button>
+          <button class="quiz-button" data-option="verify">Verify with Bank</button>
+          <p class="scenario-feedback"></p>
+        </div>
+        <div class="scenario">
+          <p>
+            <strong>Scenario 2:</strong> Your workplace IT department asks you to install a new security update via an email attachment.
+          </p> &nbsp;&nbsp;&nbsp;&nbsp; <button class="quiz-button" data-option="install">Install Update</button>
+          <button class="quiz-button" data-option="report">Report to IT Team</button>
+          <button class="quiz-button" data-option="ignore">Ignore Email</button>
+          <p class="scenario-feedback"></p>
+        </div>
+        <div class="scenario">
+          <p>
+            <strong>Scenario 3:</strong> You receive a phone call from someone claiming to be from your company's IT team asking for login details.
+          </p> &nbsp;&nbsp;&nbsp;&nbsp; <button class="quiz-button" data-option="provide">Give Details</button>
+          <button class="quiz-button" data-option="verify">Verify with IT Team</button>
+          <button class="quiz-button" data-option="hangup">Hang Up!</button>
+          <p class="scenario-feedback"></p>
+        </div>
+        <!--<section id="scenario2"><div class="scenario" ><p><strong>Scenario 4:</strong> You receive an email from "Holberton IT Support" stating that your student portal password has expired and you must update it immediately through a provided link. Note that the sender email address (imhalbortan@example.com) is not the official one. What would you do?</p><button class= "quiz-button" data-option="click">Click the Link and Reset Password</button><button class= "quiz-button" data-option="report">Report the Email to School IT</button><button class= "quiz-button" data-option="verify">Verify Directly via the Student Portal</button><p class="scenario-feedback"></p></div></section> -->
+
+      </aside>
+    </main>
+    <footer>
+      <p>&copy; 2025. Made by Gowthami Ramesh Babu for <a href="https://apply.holbertonschool.com" target="_blank">Holberton School</a></p></footer>
+  </body>
+</html>

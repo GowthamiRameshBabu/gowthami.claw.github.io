@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>CLAW</title>
+    <link href="https://apply.holbertonschool.com/level2/school.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="behavior.js"></script>
+    <script id="dsq-count-scr" src="https://claw-holberton.disqus.com/count.js" async></script>
+</head>
+
+<body class="works_on_smartphone">
+    
+    <header>
+        <div class="hamburger" onclick="togglehamburgermenu()">&#9776;</div>
+        <div class="right menu-bar" id ="menu">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img class="header_logo" src="images/logo.png" alt="Logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html" class="nav-button nav-button-selected">Home</a>
+                </li>
+                <li>
+                    <a href="cybersecurity_basics.html" class="nav-button">Cybersec Basics</a>
+                </li>
+                <li>
+                    <a href="cyber_laws.html" class="nav-button">Cyber Laws</a>
+                </li>
+                <li>
+                    <a href="cyber_case_studies.html" class="nav-button">Case Studies</a>
+                </li>
+                <li>
+                    <a href="activities.html" class="nav-button">Activities & Tools </a>
+                </li>
+                <li>
+                    <a href="downloads.html" class="nav-button"> Resources</a>
+                </li>
+                <li>
+                    <a href="tweets.html" class="nav-button">Recent Tweets</a>
+                </li>
+                <li>
+                    <a href="javascript:shareOnFacebook();">
+                        <img width="30" src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook" title="Share on your Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:shareOnLinkedIn();">
+                        <img width="30" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin" title="Share on your LinkedIn">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:shareOnTwitter();">
+                        <img width="30" src="https://img.icons8.com/ios-glyphs/30/twitterx--v2.png" alt="twitterx" title="Share on your Twitter">
+                    </a>
+                </li>
+                <li>
+                    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div class="center-text">
+                <h1>
+                    <span class="brown-heading">C</span>
+                    <span class="brown-heading">L</span>
+                    <span class="brown-heading">AW</span> — <span class="brown-heading">C</span>ybersecurity <span class="brown-heading">L</span>aw <span class="brown-heading">AW</span>areness
+                </h1>
+                <br>
+                <h6>Before I introduce <span class="brown-heading">CLAW</span> to you, let me share the journey that brought me here🙋🏻‍♀️ </h6>
+            </div>
+            <section class="topic" id="intro">
+                <h2>Who am I? </h2>
+                <br>
+                <img src="images/ProfessionalPortrait.jpg" class="small" id="display-pic"  onclick="smart_thumbnail_clicked(this.id)" alt="display picture">
+                <br>
+                <p>Hello there!!! I am <strong>Gowthami</strong>, I am an aspiring professional restarting IT career. </p>
+                <p>Here is my Journey from IT to Cybersecurity &amp; Law and how I found my true calling.</p>
+                <br>
+                <br>
+                <div class="intro-div">
+                    <span style="color:rgb(161, 11, 11)"> Click each tile below to know more</span>
+                    <br>
+                    <button class="intro-button" onclick="toggleContent('software-to-admin')">From IT Engineer to Aspiring Public Administrator</button>
+                    <div id="software-to-admin" class="toggle-content">
+                        <p>I began my career at Tata Consultancy Services (TCS), developing IT solutions in ServiceNow and SharePoint. However, my passion for public service and governance led me to leave my corporate job and prepare for the Indian Administrative Services (IAS). I soon realized that policy-making and administration require a strong legal foundation, which drove me to pursue a Bachelor of Laws (LL.B.) alongside my preparation. </p>
+                    </div>
+                    <button class="intro-button" onclick="toggleContent('entrepreneurial')">Entrepreneurial Spirit: Building Jnyanam Study Center</button>
+                    <div id="entrepreneurial" class="toggle-content">
+                        <p>During my IAS preparation, I noticed a critical need for a productive study environment. To address this, I founded <strong>Jnyanam Study Center </strong>(<a href="https://g.co/kgs/wmBNWsP" target="_blank">Link</a>), a paid library service offering:</p>
+                        <ul>
+                            <li>Focused study zones for distraction-free learning (<a href="https://lh3.googleusercontent.com/p/AF1QipP-sBJidEKWfYLVJYm6HX-4-3sML75G5_tf9StK=s1360-w1360-h1020" target="_blank">Photo</a>)</li>
+                            <li>Meditation hall for mental clarity and stress relief.</li>
+                        </ul>
+                        <p>This venture provided hundreds of aspirants with a supportive learning space while giving me valuable insights into problem-solving, innovation, and impact-driven initiatives. Now, I channel this same mindset into bridging cybersecurity, law, and education—empowering individuals and businesses with the knowledge to stay secure in the digital world.</p>
+
+                    </div>
+                    <button class="intro-button" onclick="toggleContent('bridging-law')">Bridging Law &amp; Technology</button>
+                    <div id="bridging-law" class="toggle-content">
+                        <p>Studying law opened my eyes to the growing intersection of cybersecurity, digital rights, and legal compliance. I realized that cyber threats aren’t just technical challenges—they have serious legal implications. This fueled my mission to merge IT expertise with legal knowledge to create practical solutions for cybersecurity and digital law awareness.</p>
+                    </div>
+                </div>
+            </section>
+            <p>
+                <strong>
+                    <span style="color:rgb(161, 11, 11)">Cyber threats are everywhere.</span>
+
+                </strong> We need to learn how to protect ourselves and understand cybersecurity laws that keep us safe in the digital world To <strong>
+                    <span style="color:rgb(161, 11, 11)">create awareness about Cybersecurity</span>
+                </strong> in the community, often ignored and resulting in mishaps.
+            </p>
+            <div class="center-text">
+                <p>Have a look at the following infographics. Click on the image to zoom-in or zoom-out.</p>
+                <div>
+                    <img class="small" id="smart_thumbnail1" alt="cyber threat landscape" src="images/cyber_threat_landscape.webp" onclick="smart_thumbnail_clicked(this.id)">&nbsp;&nbsp; 
+                    <img class="small" id="smart_thumbnail2" alt="cyber hygiene" src="https://media.licdn.com/dms/image/v2/D5622AQF0nlIFOxtl-g/feedshare-shrink_800/feedshare-shrink_800/0/1729690650185?e=1744243200&v=beta&t=xop-OmNKdg2tK9fiqYjBm5iclKQSh46OYFw26Cuh_v4" onclick="smart_thumbnail_clicked(this.id)">
+                </div>
+                <section class="topic" id="claw-intro">
+                    <h4>As a first step towards this, I present to you an education portal </h4>
+                    <h2>
+                        <span style="font-weight: bold; color: maroon;">C</span>
+                        <span style="font-weight: bold; color: maroon;">L</span>
+                        <span style="font-weight: bold; color: maroon;">AW</span> — <span style="color:maroon">C</span>ybersecurity <span style="color:maroon">L</span>aw <span style="color:maroon">AW</span>areness
+                    </h2>
+                    <p>
+                        <strong>A portal to promote cybersecurity and related legalities education
+                    
+                    </strong></p> developed at <br>
+                    <br>
+                    <div class="center-text">
+                        <a href="https://apply.holbertonschool.com" target="_blank">
+                            <img class="small" alt="holberton logo" src="https://apply.holbertonschool.com/holberton-logo.png">
+                        </a>
+                    </div>
+                    
+                    <br>
+                </section>
+                <h5>Stay secure by learning Cybersecurity and the related Laws and regulations</h5>
+                <br>
+                <a href="cybersecurity_basics.html" class="cta-button">Start Cybersecurity Basics</a>
+            </div>
+        </article>
+        <aside>
+            <h3> Share Your Thoughts Below </h3>
+            <div id="disqus_thread">
+                <script>
+                    var disqus_config = function() {
+                        this.page.url = window.location.href;  // use the current page url
+	                    this.page.identifier = window.location.pathname; // use the path of the webpage
+                    };
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                        var d = document,
+                            s = d.createElement('script');
+                        s.src = 'https://claw-holberton.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2025. Made by Gowthami Ramesh Babu for <a href="https://apply.holbertonschool.com" target="_blank">Holberton School</a></p>
+    </footer>
+</body>
+
+</html>

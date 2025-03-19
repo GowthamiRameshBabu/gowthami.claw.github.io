@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>CLAW</title>
+    <link href="https://apply.holbertonschool.com/level2/school.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="behavior.js"></script>
+  </head>
+  <body class="works_on_smartphone">
+    <header>
+      <div class="hamburger" onclick="togglehamburgermenu()">&#9776;</div>
+        <div class="right menu-bar" id ="menu">
+        <ul>
+          <li>
+            <a href="index.html">
+              <img class="header_logo" src="images/logo.png" alt="Logo">
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="nav-button">Home</a>
+          </li>
+          <li>
+            <a href="cybersecurity_basics.html" class="nav-button">Cybersec Basics</a>
+          </li>
+          <li>
+            <a href="cyber_laws.html" class="nav-button">Cyber Laws</a>
+          </li>
+          <li>
+            <a href="cyber_case_studies.html" class="nav-button">Case Studies</a>
+          </li>
+          <li>
+            <a href="activities.html" class="nav-button nav-button-selected">Activities & Tools </a>
+          </li>
+          <li>
+            <a href="downloads.html" class="nav-button"> Resources</a>
+          </li>
+          <li>
+            <a href="tweets.html" class="nav-button">Recent Tweets</a>
+          </li>
+          <li>
+            <a href="javascript:shareOnFacebook();">
+              <img width="30" src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook" title="Share on your Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:shareOnLinkedIn();">
+              <img width="30" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin" title="Share on your LinkedIn">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:shareOnTwitter();">
+              <img width="30" src="https://img.icons8.com/ios-glyphs/30/twitterx--v2.png" alt="twitterx" title="Share on your Twitter">
+            </a>
+          </li>
+          <li>
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+          </li> 
+        </ul>
+      </div>
+    </header>
+    <main>
+      <article>
+        <h3 class="center-text">Interactive Cybersecurity Exercises</h3>
+        <!-- Changeable content -->
+        <section id="password-crack-game" class="center-text activity">
+          <h4 class="center-text">Brute Force Attack Simulation</h4>
+          <p>Try to guess the password based on the given information.</p>
+          <div class="profile-info">
+            <p style="color:rgb(212, 7, 7)">Click the thumbnail to see the ID card</p>
+            <img id="doctor_id" alt="doc_id" onclick="smart_thumbnail_clicked(this.id)" src="images/doctor.jpg" class="small">
+            <p>
+              <strong>Name:</strong> John Doe
+            </p>
+            <p>
+              <strong>Date of Birth:</strong> 15/06/1990
+            </p>
+          </div>
+          <input type="text" id="guess-password" placeholder="Can you think of a pwd with Name and Year?">
+          <button class="quiz-button center-button" onclick="guessPassword()">Submit</button>
+          <p id="password-hack-feedback"></p>
+        </section>
+        <br>
+        <section id="password-checker" class="center-text activity">
+          <h4 class="center-text">Password Strength Checker</h4>
+          <p>Enter a password to check its strength:</p>
+          <input type="password" id="password-input" placeholder="Enter any password here">
+          <button class="quiz-button center-button" onclick="checkPasswordStrength()">Check Strength</button>
+          <p id="password-feedback"></p>
+          <div id="nist-guidelines">
+            <h4>NIST Green Book Password Guidelines:</h4>
+            <ul style="text-align:left">
+              <li>Use at least 8-12 characters</li>
+              <li>Include uppercase, lowercase, numbers, and special characters</li>
+              <li>Avoid dictionary words or personal information</li>
+              <li>Use passphrases instead of simple passwords</li>
+              <li>Change passwords only when compromised</li>
+            </ul>
+          </div>
+        </section>
+        <br>
+        <section id="phishing-detector" class="center-text activity">
+          <h4>Phishing Email Detector</h4>
+          <p>Analyze this sample email and spot the red flags:</p>
+          <div class="email-sample">
+            <p>
+              <strong>From:</strong> support@yourbank-secure.com
+            </p>
+            <p>
+              <strong>Subject:</strong> Urgent! Verify Your Account Now
+            </p>
+            <p>Dear Customer,</p>
+            <p>We have noticed unusual activity on your account. Please click the link below and verify your details immediately to avoid suspension.</p>
+            <p>
+              <a href="#">Click here to verify</a>
+            </p>
+          </div>
+          <br>
+          <button class="quiz-button center-button" onclick="identifyPhishing()">Show Me Red Flags</button>
+          <p id="phishing-feedback"></p>
+        </section>
+        <br>
+        <div class="nav-div-flex">
+          <a href="cyber_case_studies.html" class="cta-button">Back: Case Studies</a>
+          <a href="downloads.html" class="cta-button">Next: Resources & Downloads</a>
+        </div>
+      </article>
+      <aside>
+        <section id="legal-compliance">
+          <h3>Legal Compliance Checklist</h3>
+          <p>Assess if you comply with basic cyber laws:</p>
+          <form id="compliance-form">
+            <label>
+              <input type="checkbox"> Do you use strong, unique passwords? </label>
+            <br>
+            <label>
+              <input type="checkbox"> Have you enabled two-factor authentication (2FA)? </label>
+            <br>
+            <label>
+              <input type="checkbox"> Do you regularly update your software? </label>
+            <br>
+            <label>
+              <input type="checkbox"> Are you aware of GDPR or local data protection laws? </label>
+            <br>
+            <label>
+              <input type="checkbox"> Do you verify email senders before clicking links? </label>
+            <br>
+            <br>
+            <button class="quiz-button center-button" type="button" onclick="checkCompliance()">Check Compliance</button>
+          </form>
+          <p id="compliance-feedback"></p>
+        </section>
+        <div class="center-text">
+          <p>
+            <strong>
+              <em>"Tackle Threats with a Smile: A Comic Guide to Pyhsical Security"</em>
+            </strong>
+          </p>
+          <iframe width="450" height="315" src="https://www.youtube.com/embed/5lRkQFtVAX0?si=yXWPNmoz-nQbCrzZ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <p>&copy; 2025. Made by Gowthami Ramesh Babu for <a href="https://apply.holbertonschool.com" target="_blank">Holberton School</a></p></footer>
+  </body>
+</html>

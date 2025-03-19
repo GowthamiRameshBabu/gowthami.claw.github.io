@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>CLAW</title>
+    <link href="https://apply.holbertonschool.com/level2/school.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="behavior.js"></script>
+    <script id="dsq-count-scr" src="https://claw-holberton.disqus.com/count.js" async></script>
+  </head>
+  <body class="works_on_smartphone">
+    <header>
+      <div class="hamburger" onclick="togglehamburgermenu()">&#9776;</div>
+        <div class="right menu-bar" id ="menu">
+        <ul>
+          <li>
+            <a href="index.html">
+              <img class="header_logo" src="images/logo.png" alt="Logo">
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="nav-button">Home</a>
+          </li>
+          <li>
+            <a href="cybersecurity_basics.html" class="nav-button">Cybersec Basics</a>
+          </li>
+          <li>
+            <a href="cyber_laws.html" class="nav-button">Cyber Laws</a>
+          </li>
+          <li>
+            <a href="cyber_case_studies.html" class="nav-button">Case Studies</a>
+          </li>
+          <li>
+            <a href="activities.html" class="nav-button">Activities & Tools </a>
+          </li>
+          <li>
+            <a href="downloads.html" class="nav-button  nav-button-selected"> Resources</a>
+          </li>
+          <li>
+            <a href="tweets.html" class="nav-button">Recent Tweets</a>
+          </li>
+          <li>
+            <a href="javascript:shareOnFacebook();">
+              <img width="30" src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook" title="Share on your Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:shareOnLinkedIn();">
+              <img width="30" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin" title="Share on your LinkedIn">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:shareOnTwitter();">
+              <img width="30" src="https://img.icons8.com/ios-glyphs/30/twitterx--v2.png" alt="twitterx" title="Share on your Twitter">
+            </a>
+          </li>
+          <li>
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <article>
+        <!-- Changeable content -->
+        <div class="resources">
+          <h3>Cybersecurity Awareness Guides</h3>
+          <p>Download the guides awareness guides for your reference</p>
+          <!-- <p>Explore these cybersecurity guides that provide essential knowledge on staying safe online.</p><button class="quiz-button" onclick="toggleContent('guides-content')">View Guides</button><div id="guides-content" class="toggle-content"> -->
+          <ul>
+            <li>
+              <a href="https://venomit.com/wp-content/uploads/2021/05/Venom-Cyber-Security-Basics.pdf" target="_blank">Cybersecurity Basics Guide (PDF)</a> - Learn the fundamentals of cybersecurity.
+              <br>
+            </li>
+            
+            <li>
+              <a href="https://www.ftc.gov/system/files/attachments/cybersecurity-small-business/cybersecuirty_sb_factsheets_all.pdf" target="_blank">Strong Password Practices (PDF)</a> - Understand how to create and manage strong passwords.
+              <br>
+            </li>
+            
+            <li>
+              <a href="https://www.ncsc.gov.uk/files/Phishing-attacks-dealing-suspicious-emails-infographic.pdf" target="_blank">How to Spot Phishing Emails (PDF)</a> - Identify phishing attempts.
+              <br>
+            </li>
+            
+          </ul>
+          <!-- </div> -->
+        </div>
+        <br>
+        <div class="resources">
+          <h3>Australian Government Cybersecurity Resources</h3>
+          <p>Official government websites that provide guidelines, updates, and support for cybersecurity.</p>
+          <!-- <button class="quiz-button" onclick="toggleContent('gov-resources-content')">View Resources</button><div id="gov-resources-content" class="toggle-content"> -->
+          <ul>
+            <li>
+              <a href="https://www.cyber.gov.au/" target="_blank">Australian Cyber Security Centre (ACSC)</a> - Government cybersecurity alerts and best practices.
+              <br>
+            </li>
+            
+            <li>
+              <a href="https://www.scamwatch.gov.au/" target="_blank">ScamWatch - ACCC</a> - Stay informed about scams and frauds in Australia.
+              <br>
+            </li>
+            
+            <li>
+              <a href="https://www.oaic.gov.au/" target="_blank">Office of the Australian Information Commissioner (OAIC)</a> - Learn about data protection laws.
+              <br>
+            </li>
+            
+          </ul>
+          <!-- </div> -->
+        </div>
+        <br>
+        <div class="resources">
+          <h3>How to report a Cybercrime in Australia (Victoria)?</h3>
+          <p>If you experience cybercrime in Victoria, report it through these official channels.</p>
+          <!-- <button class="quiz-button" onclick="toggleContent('report-content')">How to Report</button><div id="report-content" class="toggle-content"> -->
+          <ul>
+            <li>
+              <a href="https://www.cyber.gov.au/acsc/report" target="_blank">Report to ACSC</a> - Report cyber threats and incidents.
+              <br>
+            </li>
+            
+            <li>
+              <a href="https://www.police.vic.gov.au/" target="_blank">Report to Victoria Police</a> - Report online fraud, cybercrime, and related offenses.
+              <br>
+            </li>
+            
+            <li>
+              <a href="https://www.scamwatch.gov.au/report-a-scam" target="_blank">Report Scams to ScamWatch</a> - Report phishing and online scams.
+              <br>
+            </li>
+            
+          </ul>
+          <!-- </div> -->
+        </div>
+        <br>
+        <div class="nav-div-flex">
+          <a href="activities.html" class="cta-button">Back: Activities</a>
+          <a href="tweets.html" class="cta-button">Next: Tweets</a>
+        </div>
+      </article>
+      <!-- <aside></div></aside> -->
+      <aside>
+        <h3>Let's Chat – Your Voice Matters!</h3>
+        <div id="disqus_thread">
+          <script>
+            var disqus_config = function() {
+              this.page.url = window.location.href;  // use the current page url
+	            this.page.identifier = window.location.pathname;
+            };
+            (function() { // DON'T EDIT BELOW THIS LINE
+              var d = document,
+                s = d.createElement('script');
+              s.src = 'https://claw-holberton.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+          </noscript>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <p>&copy; 2025. Made by Gowthami Ramesh Babu for <a href="https://apply.holbertonschool.com" target="_blank">Holberton School</a></p></footer>
+  </body>
+</html>
